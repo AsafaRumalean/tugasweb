@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid tugas</title>
+</head>
+<style>
+
+    .grid-container{
+        display: grid;
+        background: lightskyblue;
+        margin: 10px;
+        padding: 10px;
+        grid-gap: 10px;
+    }
+
+    .header{
+        background: aliceblue;
+        border: 3px solid white;
+        padding: 30px;
+        font-size: 30pt;
+        text-align: center;
+        grid-column: 1/5;
+    }
+
+    .menu{
+        background: aliceblue;
+        border: 3px solid white;
+        padding: 30px;
+        text-align: center;
+        font-size: 30pt;
+        grid-row: 2 / 4;
+        grid-column: 1/2;
+    }
+
+    .main{
+        background: aliceblue;
+        border: 3px solid white;
+        padding: 30px;
+        font-size: 30pt;
+        text-align: center;   
+    }
+
+    .right{
+        background: aliceblue;
+        border: 3px solid white;
+        padding: 30px;
+        font-size: 40pt;
+        text-align: center;
+        grid-column-start: 3;
+        grid-column-end: 5; 
+  
+    }
+
+    .footer{
+        background: aliceblue;
+        border: 3px solid white;
+        padding: 30px;
+        font-size: 30pt;
+        text-align: center;
+        grid-column: 2/5;
+    }
+    
+</style>
+</head>
+<body>
+
+<div class="grid-container">
+    <div class="header">header</div>
+    <div class="menu">menu</div>
+    <div class="main">main</div>
+    <div class="right">right</div>
+    <div class="footer">footer</div>
+   
+</div>
+    
+</body>
+</html>
